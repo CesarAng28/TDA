@@ -36,6 +36,8 @@ int main(void){
     
     for (obs = 0; obs < OBSERVATIONS; obs ++){
         printf("%zu\n",obs);
+        
+        
         start = clock();
         for (index = 0; index <= STATISTIC; index ++){
             Sequences_rfibo(obs);
