@@ -29,7 +29,19 @@
  *
  * @return FILE * opened_file.
 */
-EXTERN FILE * file_new(char *name, char *mode);
+
+FILE * file_new(char *name, char *mode){
+    FILE * my_file = NULL;
+    
+    my_file = fopen(name, mode);
+    
+    if (my_file == NULL){
+        puts("FILE OPEN ERROR");
+        return NULL;
+    }
+    else
+        return my_file;
+}
 
 
 
@@ -48,7 +60,16 @@ EXTERN FILE * file_new(char *name, char *mode);
  * @return void.
 */
 
-EXTERN void file_num_write(FILE * file, size_t columns, long double buff[] [columns], size_t rows);
+void file_num_write(FILE * file, size_t columns, long double buff[][columns], size_t rows) {
+    size_t row, column;
+    
+    for(row = 0; row < rows; row ++){
+        for(column = 0; column < columns; column ++){
+            fprintf(file, "%Lf\t", buff[row][column]);
+        }
+        fprintf(file, "\n");
+    }
+}
 
 #undef files_IMPORT
 #undef EXTERN
@@ -56,7 +77,3 @@ EXTERN void file_num_write(FILE * file, size_t columns, long double buff[] [colu
 
 
 #endif /* files_h */
-
-
-/*ietartivos en milisegundos
-recursivos en segundos*/
