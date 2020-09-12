@@ -56,3 +56,7 @@ EXTERN void file_num_write(FILE * file, size_t columns, long double buff[] [colu
 
 
 #endif /* files_h */
+
+
+/*ietartivos en milisegundos
+recursivos en segundos*/
