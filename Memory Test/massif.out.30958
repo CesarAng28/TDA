@@ -1,0 +1,2010 @@
+desc: --time-unit=B
+cmd: ./memory_test
+time_unit: B
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=1544
+mem_heap_B=1536
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=1928
+mem_heap_B=1864
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=2384
+mem_heap_B=2240
+mem_heap_extra_B=144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=2768
+mem_heap_B=2376
+mem_heap_extra_B=184
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=4840
+mem_heap_B=4440
+mem_heap_extra_B=192
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=5160
+mem_heap_B=4536
+mem_heap_extra_B=192
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=5560
+mem_heap_B=4664
+mem_heap_extra_B=192
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=6080
+mem_heap_B=5176
+mem_heap_extra_B=200
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=6344
+mem_heap_B=4920
+mem_heap_extra_B=192
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=7376
+mem_heap_B=5944
+mem_heap_extra_B=200
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=7896
+mem_heap_B=5432
+mem_heap_extra_B=192
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=7936
+mem_heap_B=5456
+mem_heap_extra_B=208
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=8472
+mem_heap_B=5984
+mem_heap_extra_B=216
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=9520
+mem_heap_B=7024
+mem_heap_extra_B=224
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=9520
+mem_heap_B=7024
+mem_heap_extra_B=224
+mem_stacks_B=0
+heap_tree=detailed
+n7: 7024 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 2592 0x1006DC0B5: getProtocol(char const*) (in /usr/lib/libobjc.A.dylib)
+  n1: 2064 0x1006DA96E: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+   n1: 2064 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+    n1: 2064 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+     n1: 2064 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+      n1: 2064 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+       n1: 2064 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+        n1: 2064 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+         n1: 2064 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 2064 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+           n1: 2064 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 2064 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 2064 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 2064 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 2064 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 2064 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                 n1: 2064 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                  n1: 2064 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                   n1: 2064 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                    n0: 2064 0x100011024: _dyld_start (in /usr/lib/dyld)
+  n1: 528 0x1006DC959: prepareMethodLists(objc_class*, method_list_t**, int, bool, bool) (in /usr/lib/libobjc.A.dylib)
+   n1: 528 0x1006DAEF6: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+    n1: 528 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+     n1: 528 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+      n1: 528 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+       n1: 528 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+        n1: 528 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+         n1: 528 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 528 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+           n1: 528 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+            n1: 528 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 528 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+              n1: 528 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 528 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 528 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 528 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                  n1: 528 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                   n1: 528 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                    n1: 528 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                     n0: 528 0x100011024: _dyld_start (in /usr/lib/dyld)
+ n1: 1536 0x1006D9CBA: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+  n1: 1536 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+   n1: 1536 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+    n1: 1536 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+     n1: 1536 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+      n1: 1536 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+       n1: 1536 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+        n1: 1536 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+         n1: 1536 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+          n1: 1536 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+           n1: 1536 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+            n1: 1536 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+             n1: 1536 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+              n0: 1536 0x100011024: _dyld_start (in /usr/lib/dyld)
+ n1: 1040 0x1006DD01E: NXMapRemove (in /usr/lib/libobjc.A.dylib)
+  n1: 1040 0x1006DCEA5: search_method_list(method_list_t const*, objc_selector*) (in /usr/lib/libobjc.A.dylib)
+   n1: 1040 0x1006DB0DD: _getObjc2MessageRefs(header_info const*, unsigned long*) (in /usr/lib/libobjc.A.dylib)
+    n1: 1040 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+     n1: 1040 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+      n1: 1040 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+       n1: 1040 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+        n1: 1040 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+         n1: 1040 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 1040 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+           n1: 1040 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+            n1: 1040 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 1040 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+              n1: 1040 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 1040 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 1040 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 1040 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                  n1: 1040 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                   n1: 1040 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                    n1: 1040 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                     n0: 1040 0x100011024: _dyld_start (in /usr/lib/dyld)
+ n1: 1024 0x1006F5E95: class_setWeakIvarLayout (in /usr/lib/libobjc.A.dylib)
+  n1: 1024 0x1006F5E26: class_setWeakIvarLayout (in /usr/lib/libobjc.A.dylib)
+   n2: 1024 0x1006F9BF9: _objc_atfork_parent (in /usr/lib/libobjc.A.dylib)
+    n1: 1024 0x1006DAA25: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+     n1: 1024 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+      n1: 1024 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+       n1: 1024 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+        n1: 1024 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+         n1: 1024 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+          n1: 1024 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+           n1: 1024 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+            n1: 1024 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+             n1: 1024 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+              n1: 1024 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+               n1: 1024 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 1024 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 1024 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                  n1: 1024 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                   n1: 1024 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                    n1: 1024 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                     n1: 1024 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                      n0: 1024 0x100011024: _dyld_start (in /usr/lib/dyld)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 440 0x1006DA049: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+  n1: 440 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+   n1: 440 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+    n1: 440 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+     n1: 440 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+      n1: 440 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+       n1: 440 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+        n1: 440 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+         n1: 440 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+          n1: 440 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+           n1: 440 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 440 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+             n1: 440 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 440 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 440 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                n1: 440 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                 n1: 440 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                  n1: 440 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                   n0: 440 0x100011024: _dyld_start (in /usr/lib/dyld)
+ n0: 264 in 10 places, all below massif's threshold (1.00%)
+ n1: 128 0x1006F8752: int sliceRequiresGC<Arch32>(Arch32::mh_t, FileSlice) (in /usr/lib/libobjc.A.dylib)
+  n1: 128 0x1006DA299: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+   n1: 128 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+    n1: 128 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+     n1: 128 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+      n1: 128 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+       n1: 128 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+        n1: 128 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+         n1: 128 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 128 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+           n1: 128 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 128 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 128 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 128 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 128 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 128 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                 n1: 128 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                  n1: 128 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                   n1: 128 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                    n0: 128 0x100011024: _dyld_start (in /usr/lib/dyld)
+#-----------
+snapshot=16
+#-----------
+time=10056
+mem_heap_B=6496
+mem_heap_extra_B=216
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=12128
+mem_heap_B=8560
+mem_heap_extra_B=224
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=12128
+mem_heap_B=8560
+mem_heap_extra_B=224
+mem_stacks_B=0
+heap_tree=detailed
+n7: 8560 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 3104 0x1006DD01E: NXMapRemove (in /usr/lib/libobjc.A.dylib)
+  n1: 3104 0x1006DCEA5: search_method_list(method_list_t const*, objc_selector*) (in /usr/lib/libobjc.A.dylib)
+   n1: 3104 0x1006DB0DD: _getObjc2MessageRefs(header_info const*, unsigned long*) (in /usr/lib/libobjc.A.dylib)
+    n1: 3104 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+     n1: 3104 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+      n1: 3104 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+       n1: 3104 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+        n1: 3104 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+         n1: 3104 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 3104 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+           n1: 3104 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+            n1: 3104 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 3104 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+              n1: 3104 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 3104 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 3104 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 3104 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                  n1: 3104 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                   n1: 3104 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                    n1: 3104 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                     n0: 3104 0x100011024: _dyld_start (in /usr/lib/dyld)
+ n2: 2064 0x1006DC0B5: getProtocol(char const*) (in /usr/lib/libobjc.A.dylib)
+  n1: 2064 0x1006DA96E: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+   n1: 2064 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+    n1: 2064 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+     n1: 2064 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+      n1: 2064 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+       n1: 2064 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+        n1: 2064 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+         n1: 2064 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 2064 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+           n1: 2064 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 2064 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 2064 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 2064 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 2064 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 2064 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                 n1: 2064 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                  n1: 2064 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                   n1: 2064 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                    n0: 2064 0x100011024: _dyld_start (in /usr/lib/dyld)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1536 0x1006D9CBA: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+  n1: 1536 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+   n1: 1536 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+    n1: 1536 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+     n1: 1536 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+      n1: 1536 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+       n1: 1536 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+        n1: 1536 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+         n1: 1536 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+          n1: 1536 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+           n1: 1536 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+            n1: 1536 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+             n1: 1536 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+              n0: 1536 0x100011024: _dyld_start (in /usr/lib/dyld)
+ n1: 1024 0x1006F5E95: class_setWeakIvarLayout (in /usr/lib/libobjc.A.dylib)
+  n1: 1024 0x1006F5E26: class_setWeakIvarLayout (in /usr/lib/libobjc.A.dylib)
+   n2: 1024 0x1006F9BF9: _objc_atfork_parent (in /usr/lib/libobjc.A.dylib)
+    n1: 1024 0x1006DAA25: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+     n1: 1024 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+      n1: 1024 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+       n1: 1024 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+        n1: 1024 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+         n1: 1024 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+          n1: 1024 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+           n1: 1024 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+            n1: 1024 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+             n1: 1024 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+              n1: 1024 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+               n1: 1024 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 1024 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 1024 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                  n1: 1024 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                   n1: 1024 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                    n1: 1024 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                     n1: 1024 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                      n0: 1024 0x100011024: _dyld_start (in /usr/lib/dyld)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 440 0x1006DA049: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+  n1: 440 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+   n1: 440 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+    n1: 440 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+     n1: 440 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+      n1: 440 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+       n1: 440 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+        n1: 440 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+         n1: 440 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+          n1: 440 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+           n1: 440 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 440 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+             n1: 440 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 440 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 440 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                n1: 440 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                 n1: 440 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                  n1: 440 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                   n0: 440 0x100011024: _dyld_start (in /usr/lib/dyld)
+ n0: 264 in 10 places, all below massif's threshold (1.00%)
+ n1: 128 0x1006F8752: int sliceRequiresGC<Arch32>(Arch32::mh_t, FileSlice) (in /usr/lib/libobjc.A.dylib)
+  n1: 128 0x1006DA299: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+   n1: 128 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+    n1: 128 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+     n1: 128 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+      n1: 128 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+       n1: 128 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+        n1: 128 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+         n1: 128 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 128 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+           n1: 128 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 128 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 128 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 128 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 128 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 128 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                 n1: 128 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                  n1: 128 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                   n1: 128 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                    n0: 128 0x100011024: _dyld_start (in /usr/lib/dyld)
+#-----------
+snapshot=19
+#-----------
+time=13176
+mem_heap_B=7520
+mem_heap_extra_B=216
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=13376
+mem_heap_B=7680
+mem_heap_extra_B=256
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=15432
+mem_heap_B=9728
+mem_heap_extra_B=264
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=15432
+mem_heap_B=9728
+mem_heap_extra_B=264
+mem_stacks_B=0
+heap_tree=detailed
+n8: 9728 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 3072 0x1006F5E95: class_setWeakIvarLayout (in /usr/lib/libobjc.A.dylib)
+  n1: 3072 0x1006F5E26: class_setWeakIvarLayout (in /usr/lib/libobjc.A.dylib)
+   n3: 3072 0x1006F9BF9: _objc_atfork_parent (in /usr/lib/libobjc.A.dylib)
+    n1: 2048 0x1006E7742: property_copyAttributeList (in /usr/lib/libobjc.A.dylib)
+     n1: 2048 0x1006DD1E7: NXMapRemove (in /usr/lib/libobjc.A.dylib)
+      n1: 2048 0x1006EFBD2: attachCategories(objc_class*, locstamped_category_t const*, unsigned int, int) (in /usr/lib/libobjc.A.dylib)
+       n1: 2048 0x1006EF6C6: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+        n1: 2048 0x1006EF69F: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+         n1: 2048 0x1006EF69F: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+          n1: 2048 0x1006EF69F: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+           n1: 2048 0x1006DB406: objc_opt::objc_stringhash_t::getIndex(char const*) const (in /usr/lib/libobjc.A.dylib)
+            n1: 2048 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+             n1: 2048 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+              n1: 2048 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+               n1: 2048 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+                n1: 2048 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+                 n1: 2048 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+                  n1: 2048 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+                   n1: 2048 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+                    n1: 2048 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                     n1: 2048 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                      n1: 2048 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                       n1: 2048 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                        n1: 2048 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                         n1: 2048 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                          n1: 2048 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                           n1: 2048 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                            n1: 2048 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                             n0: 2048 0x100011024: _dyld_start (in /usr/lib/dyld)
+    n1: 1024 0x1006DAA25: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+     n1: 1024 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+      n1: 1024 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+       n1: 1024 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+        n1: 1024 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+         n1: 1024 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+          n1: 1024 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+           n1: 1024 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+            n1: 1024 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+             n1: 1024 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+              n1: 1024 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+               n1: 1024 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 1024 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 1024 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                  n1: 1024 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                   n1: 1024 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                    n1: 1024 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                     n1: 1024 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                      n0: 1024 0x100011024: _dyld_start (in /usr/lib/dyld)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 2064 0x1006DC0B5: getProtocol(char const*) (in /usr/lib/libobjc.A.dylib)
+  n1: 2064 0x1006DA96E: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+   n1: 2064 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+    n1: 2064 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+     n1: 2064 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+      n1: 2064 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+       n1: 2064 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+        n1: 2064 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+         n1: 2064 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 2064 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+           n1: 2064 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 2064 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 2064 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 2064 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 2064 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 2064 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                 n1: 2064 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                  n1: 2064 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                   n1: 2064 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                    n0: 2064 0x100011024: _dyld_start (in /usr/lib/dyld)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 2064 0x1006DD01E: NXMapRemove (in /usr/lib/libobjc.A.dylib)
+  n1: 2064 0x1006DCEA5: search_method_list(method_list_t const*, objc_selector*) (in /usr/lib/libobjc.A.dylib)
+   n1: 2064 0x1006DB0DD: _getObjc2MessageRefs(header_info const*, unsigned long*) (in /usr/lib/libobjc.A.dylib)
+    n1: 2064 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+     n1: 2064 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+      n1: 2064 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+       n1: 2064 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+        n1: 2064 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+         n1: 2064 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 2064 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+           n1: 2064 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+            n1: 2064 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 2064 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+              n1: 2064 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 2064 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 2064 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 2064 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                  n1: 2064 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                   n1: 2064 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                    n1: 2064 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                     n0: 2064 0x100011024: _dyld_start (in /usr/lib/dyld)
+ n1: 1536 0x1006D9CBA: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+  n1: 1536 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+   n1: 1536 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+    n1: 1536 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+     n1: 1536 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+      n1: 1536 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+       n1: 1536 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+        n1: 1536 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+         n1: 1536 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+          n1: 1536 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+           n1: 1536 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+            n1: 1536 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+             n1: 1536 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+              n0: 1536 0x100011024: _dyld_start (in /usr/lib/dyld)
+ n1: 440 0x1006DA049: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+  n1: 440 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+   n1: 440 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+    n1: 440 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+     n1: 440 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+      n1: 440 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+       n1: 440 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+        n1: 440 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+         n1: 440 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+          n1: 440 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+           n1: 440 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 440 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+             n1: 440 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 440 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 440 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                n1: 440 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                 n1: 440 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                  n1: 440 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                   n0: 440 0x100011024: _dyld_start (in /usr/lib/dyld)
+ n0: 264 in 10 places, all below massif's threshold (1.00%)
+ n1: 160 0x1006EF5F3: objc::DenseMap<objc_class*, objc_class*, objc::DenseMapValueInfo<objc_class*>, objc::DenseMapInfo<objc_class*>, objc::detail::DenseMapPair<objc_class*, objc_class*> >::grow(unsigned int) (in /usr/lib/libobjc.A.dylib)
+  n0: 160 in 3 places, all below massif's threshold (1.00%)
+ n1: 128 0x1006F8752: int sliceRequiresGC<Arch32>(Arch32::mh_t, FileSlice) (in /usr/lib/libobjc.A.dylib)
+  n1: 128 0x1006DA299: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+   n1: 128 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+    n1: 128 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+     n1: 128 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+      n1: 128 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+       n1: 128 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+        n1: 128 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+         n1: 128 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 128 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+           n1: 128 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 128 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 128 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 128 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 128 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 128 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                 n1: 128 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                  n1: 128 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                   n1: 128 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                    n0: 128 0x100011024: _dyld_start (in /usr/lib/dyld)
+#-----------
+snapshot=23
+#-----------
+time=16464
+mem_heap_B=8704
+mem_heap_extra_B=256
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=16784
+mem_heap_B=8960
+mem_heap_extra_B=320
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=17104
+mem_heap_B=9216
+mem_heap_extra_B=384
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=17424
+mem_heap_B=9472
+mem_heap_extra_B=448
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=17744
+mem_heap_B=9728
+mem_heap_extra_B=512
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=18064
+mem_heap_B=9984
+mem_heap_extra_B=576
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=18320
+mem_heap_B=10176
+mem_heap_extra_B=640
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=18640
+mem_heap_B=10432
+mem_heap_extra_B=704
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=18960
+mem_heap_B=10688
+mem_heap_extra_B=768
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=19280
+mem_heap_B=10944
+mem_heap_extra_B=832
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=19600
+mem_heap_B=11200
+mem_heap_extra_B=896
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=19920
+mem_heap_B=11456
+mem_heap_extra_B=960
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=20200
+mem_heap_B=11680
+mem_heap_extra_B=1016
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=20520
+mem_heap_B=11936
+mem_heap_extra_B=1080
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=20840
+mem_heap_B=12192
+mem_heap_extra_B=1144
+mem_stacks_B=0
+heap_tree=detailed
+n7: 12192 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 3648 0x1006EF5F3: objc::DenseMap<objc_class*, objc_class*, objc::DenseMapValueInfo<objc_class*>, objc::DenseMapInfo<objc_class*>, objc::detail::DenseMapPair<objc_class*, objc_class*> >::grow(unsigned int) (in /usr/lib/libobjc.A.dylib)
+  n2: 1824 0x1006EF6C6: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+   n1: 1632 0x1006DB406: objc_opt::objc_stringhash_t::getIndex(char const*) const (in /usr/lib/libobjc.A.dylib)
+    n1: 1632 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+     n1: 1632 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+      n1: 1632 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+       n1: 1632 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+        n1: 1632 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+         n1: 1632 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 1632 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+           n1: 1632 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+            n1: 1632 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 1632 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+              n1: 1632 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 1632 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 1632 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 1632 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                  n1: 1632 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                   n1: 1632 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                    n1: 1632 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                     n0: 1632 0x100011024: _dyld_start (in /usr/lib/dyld)
+   n1: 192 0x1006EF69F: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+    n0: 192 in 2 places, all below massif's threshold (1.00%)
+  n1: 1632 0x1006DB406: objc_opt::objc_stringhash_t::getIndex(char const*) const (in /usr/lib/libobjc.A.dylib)
+   n1: 1632 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+    n1: 1632 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+     n1: 1632 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+      n1: 1632 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+       n1: 1632 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+        n1: 1632 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+         n1: 1632 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 1632 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+           n1: 1632 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 1632 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 1632 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 1632 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 1632 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 1632 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                 n1: 1632 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                  n1: 1632 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                   n1: 1632 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                    n0: 1632 0x100011024: _dyld_start (in /usr/lib/dyld)
+  n1: 192 0x1006EF69F: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+   n0: 192 in 2 places, all below massif's threshold (1.00%)
+ n2: 2064 0x1006DC0B5: getProtocol(char const*) (in /usr/lib/libobjc.A.dylib)
+  n1: 2064 0x1006DA96E: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+   n1: 2064 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+    n1: 2064 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+     n1: 2064 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+      n1: 2064 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+       n1: 2064 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+        n1: 2064 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+         n1: 2064 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 2064 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+           n1: 2064 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 2064 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 2064 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 2064 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 2064 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 2064 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                 n1: 2064 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                  n1: 2064 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                   n1: 2064 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                    n0: 2064 0x100011024: _dyld_start (in /usr/lib/dyld)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 2064 0x1006DD01E: NXMapRemove (in /usr/lib/libobjc.A.dylib)
+  n1: 2064 0x1006DCEA5: search_method_list(method_list_t const*, objc_selector*) (in /usr/lib/libobjc.A.dylib)
+   n1: 2064 0x1006DB0DD: _getObjc2MessageRefs(header_info const*, unsigned long*) (in /usr/lib/libobjc.A.dylib)
+    n1: 2064 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+     n1: 2064 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+      n1: 2064 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+       n1: 2064 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+        n1: 2064 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+         n1: 2064 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 2064 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+           n1: 2064 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+            n1: 2064 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 2064 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+              n1: 2064 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 2064 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 2064 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 2064 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                  n1: 2064 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                   n1: 2064 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                    n1: 2064 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                     n0: 2064 0x100011024: _dyld_start (in /usr/lib/dyld)
+ n1: 2048 0x1006F5E95: class_setWeakIvarLayout (in /usr/lib/libobjc.A.dylib)
+  n1: 2048 0x1006F5E26: class_setWeakIvarLayout (in /usr/lib/libobjc.A.dylib)
+   n2: 2048 0x1006F9BF9: _objc_atfork_parent (in /usr/lib/libobjc.A.dylib)
+    n1: 2048 0x1006E7742: property_copyAttributeList (in /usr/lib/libobjc.A.dylib)
+     n1: 2048 0x1006DD1E7: NXMapRemove (in /usr/lib/libobjc.A.dylib)
+      n1: 2048 0x1006EFBD2: attachCategories(objc_class*, locstamped_category_t const*, unsigned int, int) (in /usr/lib/libobjc.A.dylib)
+       n1: 2048 0x1006EF6C6: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+        n1: 2048 0x1006EF69F: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+         n1: 2048 0x1006EF69F: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+          n1: 2048 0x1006EF69F: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+           n1: 2048 0x1006DB406: objc_opt::objc_stringhash_t::getIndex(char const*) const (in /usr/lib/libobjc.A.dylib)
+            n1: 2048 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+             n1: 2048 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+              n1: 2048 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+               n1: 2048 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+                n1: 2048 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+                 n1: 2048 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+                  n1: 2048 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+                   n1: 2048 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+                    n1: 2048 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                     n1: 2048 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                      n1: 2048 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                       n1: 2048 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                        n1: 2048 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                         n1: 2048 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                          n1: 2048 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                           n1: 2048 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                            n1: 2048 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                             n0: 2048 0x100011024: _dyld_start (in /usr/lib/dyld)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 1536 0x1006D9CBA: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+  n1: 1536 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+   n1: 1536 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+    n1: 1536 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+     n1: 1536 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+      n1: 1536 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+       n1: 1536 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+        n1: 1536 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+         n1: 1536 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+          n1: 1536 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+           n1: 1536 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+            n1: 1536 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+             n1: 1536 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+              n0: 1536 0x100011024: _dyld_start (in /usr/lib/dyld)
+ n1: 440 0x1006DA049: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+  n1: 440 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+   n1: 440 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+    n1: 440 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+     n1: 440 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+      n1: 440 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+       n1: 440 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+        n1: 440 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+         n1: 440 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+          n1: 440 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+           n1: 440 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 440 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+             n1: 440 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 440 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 440 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                n1: 440 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                 n1: 440 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                  n1: 440 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                   n0: 440 0x100011024: _dyld_start (in /usr/lib/dyld)
+ n0: 392 in 11 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=38
+#-----------
+time=21104
+mem_heap_B=12448
+mem_heap_extra_B=1152
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=21616
+mem_heap_B=12960
+mem_heap_extra_B=1152
+mem_stacks_B=0
+heap_tree=detailed
+n8: 12960 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 3648 0x1006EF5F3: objc::DenseMap<objc_class*, objc_class*, objc::DenseMapValueInfo<objc_class*>, objc::DenseMapInfo<objc_class*>, objc::detail::DenseMapPair<objc_class*, objc_class*> >::grow(unsigned int) (in /usr/lib/libobjc.A.dylib)
+  n2: 1824 0x1006EF6C6: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+   n1: 1632 0x1006DB406: objc_opt::objc_stringhash_t::getIndex(char const*) const (in /usr/lib/libobjc.A.dylib)
+    n1: 1632 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+     n1: 1632 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+      n1: 1632 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+       n1: 1632 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+        n1: 1632 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+         n1: 1632 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 1632 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+           n1: 1632 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+            n1: 1632 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 1632 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+              n1: 1632 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 1632 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 1632 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 1632 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                  n1: 1632 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                   n1: 1632 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                    n1: 1632 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                     n0: 1632 0x100011024: _dyld_start (in /usr/lib/dyld)
+   n1: 192 0x1006EF69F: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+    n0: 192 in 2 places, all below massif's threshold (1.00%)
+  n1: 1632 0x1006DB406: objc_opt::objc_stringhash_t::getIndex(char const*) const (in /usr/lib/libobjc.A.dylib)
+   n1: 1632 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+    n1: 1632 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+     n1: 1632 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+      n1: 1632 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+       n1: 1632 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+        n1: 1632 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+         n1: 1632 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 1632 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+           n1: 1632 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 1632 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 1632 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 1632 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 1632 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 1632 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                 n1: 1632 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                  n1: 1632 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                   n1: 1632 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                    n0: 1632 0x100011024: _dyld_start (in /usr/lib/dyld)
+  n1: 192 0x1006EF69F: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+   n0: 192 in 2 places, all below massif's threshold (1.00%)
+ n2: 2064 0x1006DC0B5: getProtocol(char const*) (in /usr/lib/libobjc.A.dylib)
+  n1: 2064 0x1006DA96E: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+   n1: 2064 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+    n1: 2064 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+     n1: 2064 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+      n1: 2064 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+       n1: 2064 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+        n1: 2064 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+         n1: 2064 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 2064 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+           n1: 2064 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 2064 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 2064 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 2064 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 2064 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 2064 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                 n1: 2064 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                  n1: 2064 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                   n1: 2064 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                    n0: 2064 0x100011024: _dyld_start (in /usr/lib/dyld)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 2064 0x1006DD01E: NXMapRemove (in /usr/lib/libobjc.A.dylib)
+  n1: 2064 0x1006DCEA5: search_method_list(method_list_t const*, objc_selector*) (in /usr/lib/libobjc.A.dylib)
+   n1: 2064 0x1006DB0DD: _getObjc2MessageRefs(header_info const*, unsigned long*) (in /usr/lib/libobjc.A.dylib)
+    n1: 2064 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+     n1: 2064 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+      n1: 2064 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+       n1: 2064 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+        n1: 2064 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+         n1: 2064 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 2064 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+           n1: 2064 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+            n1: 2064 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 2064 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+              n1: 2064 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 2064 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 2064 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 2064 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                  n1: 2064 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                   n1: 2064 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                    n1: 2064 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                     n0: 2064 0x100011024: _dyld_start (in /usr/lib/dyld)
+ n1: 2048 0x1006F5E95: class_setWeakIvarLayout (in /usr/lib/libobjc.A.dylib)
+  n1: 2048 0x1006F5E26: class_setWeakIvarLayout (in /usr/lib/libobjc.A.dylib)
+   n2: 2048 0x1006F9BF9: _objc_atfork_parent (in /usr/lib/libobjc.A.dylib)
+    n1: 2048 0x1006E7742: property_copyAttributeList (in /usr/lib/libobjc.A.dylib)
+     n1: 2048 0x1006DD1E7: NXMapRemove (in /usr/lib/libobjc.A.dylib)
+      n1: 2048 0x1006EFBD2: attachCategories(objc_class*, locstamped_category_t const*, unsigned int, int) (in /usr/lib/libobjc.A.dylib)
+       n1: 2048 0x1006EF6C6: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+        n1: 2048 0x1006EF69F: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+         n1: 2048 0x1006EF69F: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+          n1: 2048 0x1006EF69F: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+           n1: 2048 0x1006DB406: objc_opt::objc_stringhash_t::getIndex(char const*) const (in /usr/lib/libobjc.A.dylib)
+            n1: 2048 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+             n1: 2048 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+              n1: 2048 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+               n1: 2048 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+                n1: 2048 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+                 n1: 2048 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+                  n1: 2048 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+                   n1: 2048 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+                    n1: 2048 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                     n1: 2048 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                      n1: 2048 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                       n1: 2048 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                        n1: 2048 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                         n1: 2048 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                          n1: 2048 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                           n1: 2048 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                            n1: 2048 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                             n0: 2048 0x100011024: _dyld_start (in /usr/lib/dyld)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 1536 0x1006D9CBA: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+  n1: 1536 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+   n1: 1536 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+    n1: 1536 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+     n1: 1536 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+      n1: 1536 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+       n1: 1536 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+        n1: 1536 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+         n1: 1536 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+          n1: 1536 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+           n1: 1536 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+            n1: 1536 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+             n1: 1536 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+              n0: 1536 0x100011024: _dyld_start (in /usr/lib/dyld)
+ n1: 768 0x1006E0C28: object_setClass (in /usr/lib/libobjc.A.dylib)
+  n1: 768 0x1006DE0AA: objc_msgSendSuper (in /usr/lib/libobjc.A.dylib)
+   n1: 768 0x1000158D7: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+    n1: 768 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+     n1: 768 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+      n1: 768 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+       n1: 768 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+        n1: 768 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+         n1: 768 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+          n1: 768 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+           n1: 768 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+            n1: 768 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+             n1: 768 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 768 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+               n1: 768 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                n1: 768 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                 n1: 768 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                  n0: 768 0x100011024: _dyld_start (in /usr/lib/dyld)
+ n1: 440 0x1006DA049: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+  n1: 440 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+   n1: 440 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+    n1: 440 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+     n1: 440 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+      n1: 440 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+       n1: 440 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+        n1: 440 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+         n1: 440 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+          n1: 440 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+           n1: 440 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 440 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+             n1: 440 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 440 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 440 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                n1: 440 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                 n1: 440 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                  n1: 440 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                   n0: 440 0x100011024: _dyld_start (in /usr/lib/dyld)
+ n0: 392 in 11 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=40
+#-----------
+time=22392
+mem_heap_B=12192
+mem_heap_extra_B=1144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=22696
+mem_heap_B=12464
+mem_heap_extra_B=1176
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=23000
+mem_heap_B=12719
+mem_heap_extra_B=1225
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=23496
+mem_heap_B=13111
+mem_heap_extra_B=1329
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=23872
+mem_heap_B=13436
+mem_heap_extra_B=1380
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=24264
+mem_heap_B=13784
+mem_heap_extra_B=1424
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=25280
+mem_heap_B=14784
+mem_heap_extra_B=1440
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=26296
+mem_heap_B=15784
+mem_heap_extra_B=1456
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=27312
+mem_heap_B=16784
+mem_heap_extra_B=1472
+mem_stacks_B=0
+heap_tree=detailed
+n11: 16784 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 3648 0x1006EF5F3: objc::DenseMap<objc_class*, objc_class*, objc::DenseMapValueInfo<objc_class*>, objc::DenseMapInfo<objc_class*>, objc::detail::DenseMapPair<objc_class*, objc_class*> >::grow(unsigned int) (in /usr/lib/libobjc.A.dylib)
+  n2: 1824 0x1006EF6C6: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+   n1: 1632 0x1006DB406: objc_opt::objc_stringhash_t::getIndex(char const*) const (in /usr/lib/libobjc.A.dylib)
+    n1: 1632 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+     n1: 1632 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+      n1: 1632 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+       n1: 1632 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+        n1: 1632 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+         n1: 1632 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 1632 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+           n1: 1632 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+            n1: 1632 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 1632 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+              n1: 1632 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 1632 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 1632 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 1632 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                  n1: 1632 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                   n1: 1632 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                    n1: 1632 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                     n0: 1632 0x100011024: _dyld_start (in /usr/lib/dyld)
+   n1: 192 0x1006EF69F: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+    n0: 192 in 2 places, all below massif's threshold (1.00%)
+  n1: 1632 0x1006DB406: objc_opt::objc_stringhash_t::getIndex(char const*) const (in /usr/lib/libobjc.A.dylib)
+   n1: 1632 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+    n1: 1632 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+     n1: 1632 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+      n1: 1632 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+       n1: 1632 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+        n1: 1632 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+         n1: 1632 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 1632 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+           n1: 1632 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 1632 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 1632 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 1632 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 1632 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 1632 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                 n1: 1632 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                  n1: 1632 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                   n1: 1632 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                    n0: 1632 0x100011024: _dyld_start (in /usr/lib/dyld)
+  n1: 192 0x1006EF69F: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+   n0: 192 in 2 places, all below massif's threshold (1.00%)
+ n0: 3000 0x100003EF7: main (memory_test.c:29)
+ n2: 2064 0x1006DC0B5: getProtocol(char const*) (in /usr/lib/libobjc.A.dylib)
+  n1: 2064 0x1006DA96E: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+   n1: 2064 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+    n1: 2064 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+     n1: 2064 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+      n1: 2064 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+       n1: 2064 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+        n1: 2064 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+         n1: 2064 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 2064 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+           n1: 2064 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 2064 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 2064 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 2064 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 2064 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 2064 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                 n1: 2064 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                  n1: 2064 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                   n1: 2064 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                    n0: 2064 0x100011024: _dyld_start (in /usr/lib/dyld)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 2064 0x1006DD01E: NXMapRemove (in /usr/lib/libobjc.A.dylib)
+  n1: 2064 0x1006DCEA5: search_method_list(method_list_t const*, objc_selector*) (in /usr/lib/libobjc.A.dylib)
+   n1: 2064 0x1006DB0DD: _getObjc2MessageRefs(header_info const*, unsigned long*) (in /usr/lib/libobjc.A.dylib)
+    n1: 2064 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+     n1: 2064 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+      n1: 2064 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+       n1: 2064 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+        n1: 2064 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+         n1: 2064 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 2064 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+           n1: 2064 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+            n1: 2064 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 2064 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+              n1: 2064 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 2064 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 2064 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 2064 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                  n1: 2064 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                   n1: 2064 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                    n1: 2064 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                     n0: 2064 0x100011024: _dyld_start (in /usr/lib/dyld)
+ n1: 2048 0x1006F5E95: class_setWeakIvarLayout (in /usr/lib/libobjc.A.dylib)
+  n1: 2048 0x1006F5E26: class_setWeakIvarLayout (in /usr/lib/libobjc.A.dylib)
+   n2: 2048 0x1006F9BF9: _objc_atfork_parent (in /usr/lib/libobjc.A.dylib)
+    n1: 2048 0x1006E7742: property_copyAttributeList (in /usr/lib/libobjc.A.dylib)
+     n1: 2048 0x1006DD1E7: NXMapRemove (in /usr/lib/libobjc.A.dylib)
+      n1: 2048 0x1006EFBD2: attachCategories(objc_class*, locstamped_category_t const*, unsigned int, int) (in /usr/lib/libobjc.A.dylib)
+       n1: 2048 0x1006EF6C6: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+        n1: 2048 0x1006EF69F: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+         n1: 2048 0x1006EF69F: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+          n1: 2048 0x1006EF69F: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+           n1: 2048 0x1006DB406: objc_opt::objc_stringhash_t::getIndex(char const*) const (in /usr/lib/libobjc.A.dylib)
+            n1: 2048 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+             n1: 2048 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+              n1: 2048 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+               n1: 2048 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+                n1: 2048 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+                 n1: 2048 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+                  n1: 2048 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+                   n1: 2048 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+                    n1: 2048 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                     n1: 2048 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                      n1: 2048 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                       n1: 2048 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                        n1: 2048 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                         n1: 2048 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                          n1: 2048 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                           n1: 2048 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                            n1: 2048 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                             n0: 2048 0x100011024: _dyld_start (in /usr/lib/dyld)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 1536 0x1006D9CBA: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+  n1: 1536 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+   n1: 1536 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+    n1: 1536 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+     n1: 1536 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+      n1: 1536 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+       n1: 1536 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+        n1: 1536 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+         n1: 1536 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+          n1: 1536 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+           n1: 1536 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+            n1: 1536 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+             n1: 1536 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+              n0: 1536 0x100011024: _dyld_start (in /usr/lib/dyld)
+ n1: 672 0x1006DE667: objc_msgSend_stret (in /usr/lib/libobjc.A.dylib)
+  n3: 672 0x100236FEC: _os_object_alloc_realized (in /usr/lib/system/libdispatch.dylib)
+   n0: 240 in 3 places, all below massif's threshold (1.00%)
+   n1: 240 0x100692D06: _xpc_string_create (in /usr/lib/system/libxpc.dylib)
+    n1: 240 0x10067682F: xpc_dictionary_set_string (in /usr/lib/system/libxpc.dylib)
+     n1: 240 0x100676685: _xpc_collect_environment (in /usr/lib/system/libxpc.dylib)
+      n1: 240 0x100676292: _libxpc_initializer (in /usr/lib/system/libxpc.dylib)
+       n1: 240 0x1001267A0: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+        n1: 240 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+         n1: 240 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+          n1: 240 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+           n1: 240 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+            n1: 240 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+             n1: 240 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+              n1: 240 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+               n1: 240 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                n1: 240 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                 n0: 240 0x100011024: _dyld_start (in /usr/lib/dyld)
+   n1: 192 0x1006767D7: xpc_dictionary_create (in /usr/lib/system/libxpc.dylib)
+    n0: 192 in 2 places, all below massif's threshold (1.00%)
+ n0: 550 in 16 places, all below massif's threshold (1.00%)
+ n1: 486 0x100676C06: _xpc_malloc (in /usr/lib/system/libxpc.dylib)
+  n2: 486 0x100676AE1: _xpc_dictionary_insert (in /usr/lib/system/libxpc.dylib)
+   n1: 250 0x100676E87: _xpc_dyld_image_callback (in /usr/lib/system/libxpc.dylib)
+    n1: 250 0x10001499C: dyld::registerBulkLoadCallback(void (*)(unsigned int, mach_header const**, char const**)) (in /usr/lib/dyld)
+     n1: 250 0x100676D1A: _xpc_collect_images (in /usr/lib/system/libxpc.dylib)
+      n1: 250 0x100676297: _libxpc_initializer (in /usr/lib/system/libxpc.dylib)
+       n1: 250 0x1001267A0: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+        n1: 250 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+         n1: 250 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+          n1: 250 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+           n1: 250 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+            n1: 250 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+             n1: 250 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+              n1: 250 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+               n1: 250 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                n1: 250 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                 n0: 250 0x100011024: _dyld_start (in /usr/lib/dyld)
+   n1: 236 0x100676840: xpc_dictionary_set_string (in /usr/lib/system/libxpc.dylib)
+    n1: 236 0x100676685: _xpc_collect_environment (in /usr/lib/system/libxpc.dylib)
+     n1: 236 0x100676292: _libxpc_initializer (in /usr/lib/system/libxpc.dylib)
+      n1: 236 0x1001267A0: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+       n1: 236 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+        n1: 236 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+         n1: 236 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+          n1: 236 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+           n1: 236 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+            n1: 236 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+             n1: 236 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+              n1: 236 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+               n1: 236 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                n0: 236 0x100011024: _dyld_start (in /usr/lib/dyld)
+ n1: 440 0x1006DA049: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+  n1: 440 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+   n1: 440 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+    n1: 440 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+     n1: 440 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+      n1: 440 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+       n1: 440 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+        n1: 440 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+         n1: 440 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+          n1: 440 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+           n1: 440 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 440 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+             n1: 440 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 440 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 440 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                n1: 440 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                 n1: 440 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                  n1: 440 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                   n0: 440 0x100011024: _dyld_start (in /usr/lib/dyld)
+ n1: 276 0x1003CBCE5: strdup (in /usr/lib/system/libsystem_c.dylib)
+  n1: 276 0x10067685D: xpc_string_create (in /usr/lib/system/libxpc.dylib)
+   n1: 276 0x10067682F: xpc_dictionary_set_string (in /usr/lib/system/libxpc.dylib)
+    n1: 276 0x100676685: _xpc_collect_environment (in /usr/lib/system/libxpc.dylib)
+     n1: 276 0x100676292: _libxpc_initializer (in /usr/lib/system/libxpc.dylib)
+      n1: 276 0x1001267A0: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+       n1: 276 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+        n1: 276 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+         n1: 276 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+          n1: 276 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+           n1: 276 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+            n1: 276 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+             n1: 276 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+              n1: 276 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+               n1: 276 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                n0: 276 0x100011024: _dyld_start (in /usr/lib/dyld)
+#-----------
+snapshot=49
+#-----------
+time=28328
+mem_heap_B=17784
+mem_heap_extra_B=1488
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=29344
+mem_heap_B=18784
+mem_heap_extra_B=1504
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=30360
+mem_heap_B=19784
+mem_heap_extra_B=1520
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=31376
+mem_heap_B=20784
+mem_heap_extra_B=1536
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=32392
+mem_heap_B=21784
+mem_heap_extra_B=1552
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=33408
+mem_heap_B=22784
+mem_heap_extra_B=1568
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=34424
+mem_heap_B=23784
+mem_heap_extra_B=1584
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=36432
+mem_heap_B=25784
+mem_heap_extra_B=1592
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=40440
+mem_heap_B=29784
+mem_heap_extra_B=1600
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=44448
+mem_heap_B=33784
+mem_heap_extra_B=1608
+mem_stacks_B=0
+heap_tree=detailed
+n12: 33784 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 10000 0x100003EF7: main (memory_test.c:29)
+ n2: 8000 0x100003E8D: g (memory_test.c:14)
+  n1: 4000 0x100003EAA: f (memory_test.c:20)
+   n0: 4000 0x100003F13: main (memory_test.c:33)
+  n0: 4000 0x100003F18: main (memory_test.c:35)
+ n3: 3648 0x1006EF5F3: objc::DenseMap<objc_class*, objc_class*, objc::DenseMapValueInfo<objc_class*>, objc::DenseMapInfo<objc_class*>, objc::detail::DenseMapPair<objc_class*, objc_class*> >::grow(unsigned int) (in /usr/lib/libobjc.A.dylib)
+  n2: 1824 0x1006EF6C6: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+   n1: 1632 0x1006DB406: objc_opt::objc_stringhash_t::getIndex(char const*) const (in /usr/lib/libobjc.A.dylib)
+    n1: 1632 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+     n1: 1632 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+      n1: 1632 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+       n1: 1632 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+        n1: 1632 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+         n1: 1632 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 1632 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+           n1: 1632 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+            n1: 1632 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 1632 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+              n1: 1632 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 1632 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 1632 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 1632 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                  n1: 1632 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                   n1: 1632 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                    n1: 1632 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                     n0: 1632 0x100011024: _dyld_start (in /usr/lib/dyld)
+   n0: 192 in 1 place, below massif's threshold (1.00%)
+  n1: 1632 0x1006DB406: objc_opt::objc_stringhash_t::getIndex(char const*) const (in /usr/lib/libobjc.A.dylib)
+   n1: 1632 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+    n1: 1632 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+     n1: 1632 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+      n1: 1632 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+       n1: 1632 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+        n1: 1632 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+         n1: 1632 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 1632 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+           n1: 1632 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 1632 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 1632 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 1632 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 1632 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 1632 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                 n1: 1632 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                  n1: 1632 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                   n1: 1632 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                    n0: 1632 0x100011024: _dyld_start (in /usr/lib/dyld)
+  n0: 192 in 1 place, below massif's threshold (1.00%)
+ n2: 2064 0x1006DC0B5: getProtocol(char const*) (in /usr/lib/libobjc.A.dylib)
+  n1: 2064 0x1006DA96E: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+   n1: 2064 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+    n1: 2064 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+     n1: 2064 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+      n1: 2064 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+       n1: 2064 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+        n1: 2064 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+         n1: 2064 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 2064 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+           n1: 2064 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 2064 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 2064 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 2064 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 2064 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 2064 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                 n1: 2064 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                  n1: 2064 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                   n1: 2064 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                    n0: 2064 0x100011024: _dyld_start (in /usr/lib/dyld)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 2064 0x1006DD01E: NXMapRemove (in /usr/lib/libobjc.A.dylib)
+  n1: 2064 0x1006DCEA5: search_method_list(method_list_t const*, objc_selector*) (in /usr/lib/libobjc.A.dylib)
+   n1: 2064 0x1006DB0DD: _getObjc2MessageRefs(header_info const*, unsigned long*) (in /usr/lib/libobjc.A.dylib)
+    n1: 2064 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+     n1: 2064 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+      n1: 2064 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+       n1: 2064 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+        n1: 2064 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+         n1: 2064 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 2064 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+           n1: 2064 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+            n1: 2064 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 2064 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+              n1: 2064 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 2064 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 2064 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 2064 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                  n1: 2064 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                   n1: 2064 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                    n1: 2064 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                     n0: 2064 0x100011024: _dyld_start (in /usr/lib/dyld)
+ n1: 2048 0x1006F5E95: class_setWeakIvarLayout (in /usr/lib/libobjc.A.dylib)
+  n1: 2048 0x1006F5E26: class_setWeakIvarLayout (in /usr/lib/libobjc.A.dylib)
+   n2: 2048 0x1006F9BF9: _objc_atfork_parent (in /usr/lib/libobjc.A.dylib)
+    n1: 2048 0x1006E7742: property_copyAttributeList (in /usr/lib/libobjc.A.dylib)
+     n1: 2048 0x1006DD1E7: NXMapRemove (in /usr/lib/libobjc.A.dylib)
+      n1: 2048 0x1006EFBD2: attachCategories(objc_class*, locstamped_category_t const*, unsigned int, int) (in /usr/lib/libobjc.A.dylib)
+       n1: 2048 0x1006EF6C6: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+        n1: 2048 0x1006EF69F: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+         n1: 2048 0x1006EF69F: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+          n1: 2048 0x1006EF69F: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+           n1: 2048 0x1006DB406: objc_opt::objc_stringhash_t::getIndex(char const*) const (in /usr/lib/libobjc.A.dylib)
+            n1: 2048 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+             n1: 2048 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+              n1: 2048 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+               n1: 2048 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+                n1: 2048 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+                 n1: 2048 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+                  n1: 2048 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+                   n1: 2048 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+                    n1: 2048 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                     n1: 2048 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                      n1: 2048 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                       n1: 2048 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                        n1: 2048 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                         n1: 2048 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                          n1: 2048 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                           n1: 2048 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                            n1: 2048 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                             n0: 2048 0x100011024: _dyld_start (in /usr/lib/dyld)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 2000 0x100003EA1: f (memory_test.c:19)
+  n0: 2000 0x100003F13: main (memory_test.c:33)
+ n1: 1536 0x1006D9CBA: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+  n1: 1536 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+   n1: 1536 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+    n1: 1536 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+     n1: 1536 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+      n1: 1536 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+       n1: 1536 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+        n1: 1536 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+         n1: 1536 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+          n1: 1536 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+           n1: 1536 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+            n1: 1536 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+             n1: 1536 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+              n0: 1536 0x100011024: _dyld_start (in /usr/lib/dyld)
+ n0: 826 in 17 places, all below massif's threshold (1.00%)
+ n1: 672 0x1006DE667: objc_msgSend_stret (in /usr/lib/libobjc.A.dylib)
+  n1: 672 0x100236FEC: _os_object_alloc_realized (in /usr/lib/system/libdispatch.dylib)
+   n0: 672 in 5 places, all below massif's threshold (1.00%)
+ n1: 486 0x100676C06: _xpc_malloc (in /usr/lib/system/libxpc.dylib)
+  n1: 486 0x100676AE1: _xpc_dictionary_insert (in /usr/lib/system/libxpc.dylib)
+   n0: 486 in 2 places, all below massif's threshold (1.00%)
+ n1: 440 0x1006DA049: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+  n1: 440 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+   n1: 440 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+    n1: 440 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+     n1: 440 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+      n1: 440 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+       n1: 440 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+        n1: 440 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+         n1: 440 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+          n1: 440 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+           n1: 440 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 440 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+             n1: 440 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 440 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 440 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                n1: 440 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                 n1: 440 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                  n1: 440 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                   n0: 440 0x100011024: _dyld_start (in /usr/lib/dyld)
+#-----------
+snapshot=59
+#-----------
+time=44448
+mem_heap_B=33784
+mem_heap_extra_B=1608
+mem_stacks_B=0
+heap_tree=peak
+n12: 33784 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 10000 0x100003EF7: main (memory_test.c:29)
+ n2: 8000 0x100003E8D: g (memory_test.c:14)
+  n1: 4000 0x100003EAA: f (memory_test.c:20)
+   n0: 4000 0x100003F13: main (memory_test.c:33)
+  n0: 4000 0x100003F18: main (memory_test.c:35)
+ n3: 3648 0x1006EF5F3: objc::DenseMap<objc_class*, objc_class*, objc::DenseMapValueInfo<objc_class*>, objc::DenseMapInfo<objc_class*>, objc::detail::DenseMapPair<objc_class*, objc_class*> >::grow(unsigned int) (in /usr/lib/libobjc.A.dylib)
+  n2: 1824 0x1006EF6C6: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+   n1: 1632 0x1006DB406: objc_opt::objc_stringhash_t::getIndex(char const*) const (in /usr/lib/libobjc.A.dylib)
+    n1: 1632 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+     n1: 1632 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+      n1: 1632 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+       n1: 1632 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+        n1: 1632 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+         n1: 1632 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 1632 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+           n1: 1632 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+            n1: 1632 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 1632 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+              n1: 1632 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 1632 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 1632 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 1632 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                  n1: 1632 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                   n1: 1632 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                    n1: 1632 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                     n0: 1632 0x100011024: _dyld_start (in /usr/lib/dyld)
+   n0: 192 in 1 place, below massif's threshold (1.00%)
+  n1: 1632 0x1006DB406: objc_opt::objc_stringhash_t::getIndex(char const*) const (in /usr/lib/libobjc.A.dylib)
+   n1: 1632 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+    n1: 1632 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+     n1: 1632 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+      n1: 1632 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+       n1: 1632 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+        n1: 1632 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+         n1: 1632 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 1632 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+           n1: 1632 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 1632 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 1632 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 1632 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 1632 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 1632 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                 n1: 1632 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                  n1: 1632 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                   n1: 1632 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                    n0: 1632 0x100011024: _dyld_start (in /usr/lib/dyld)
+  n0: 192 in 1 place, below massif's threshold (1.00%)
+ n2: 2064 0x1006DC0B5: getProtocol(char const*) (in /usr/lib/libobjc.A.dylib)
+  n1: 2064 0x1006DA96E: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+   n1: 2064 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+    n1: 2064 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+     n1: 2064 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+      n1: 2064 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+       n1: 2064 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+        n1: 2064 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+         n1: 2064 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 2064 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+           n1: 2064 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 2064 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 2064 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 2064 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 2064 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 2064 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                 n1: 2064 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                  n1: 2064 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                   n1: 2064 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                    n0: 2064 0x100011024: _dyld_start (in /usr/lib/dyld)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 2064 0x1006DD01E: NXMapRemove (in /usr/lib/libobjc.A.dylib)
+  n1: 2064 0x1006DCEA5: search_method_list(method_list_t const*, objc_selector*) (in /usr/lib/libobjc.A.dylib)
+   n1: 2064 0x1006DB0DD: _getObjc2MessageRefs(header_info const*, unsigned long*) (in /usr/lib/libobjc.A.dylib)
+    n1: 2064 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+     n1: 2064 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+      n1: 2064 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+       n1: 2064 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+        n1: 2064 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+         n1: 2064 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 2064 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+           n1: 2064 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+            n1: 2064 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 2064 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+              n1: 2064 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 2064 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 2064 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 2064 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                  n1: 2064 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                   n1: 2064 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                    n1: 2064 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                     n0: 2064 0x100011024: _dyld_start (in /usr/lib/dyld)
+ n1: 2048 0x1006F5E95: class_setWeakIvarLayout (in /usr/lib/libobjc.A.dylib)
+  n1: 2048 0x1006F5E26: class_setWeakIvarLayout (in /usr/lib/libobjc.A.dylib)
+   n2: 2048 0x1006F9BF9: _objc_atfork_parent (in /usr/lib/libobjc.A.dylib)
+    n1: 2048 0x1006E7742: property_copyAttributeList (in /usr/lib/libobjc.A.dylib)
+     n1: 2048 0x1006DD1E7: NXMapRemove (in /usr/lib/libobjc.A.dylib)
+      n1: 2048 0x1006EFBD2: attachCategories(objc_class*, locstamped_category_t const*, unsigned int, int) (in /usr/lib/libobjc.A.dylib)
+       n1: 2048 0x1006EF6C6: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+        n1: 2048 0x1006EF69F: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+         n1: 2048 0x1006EF69F: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+          n1: 2048 0x1006EF69F: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+           n1: 2048 0x1006DB406: objc_opt::objc_stringhash_t::getIndex(char const*) const (in /usr/lib/libobjc.A.dylib)
+            n1: 2048 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+             n1: 2048 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+              n1: 2048 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+               n1: 2048 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+                n1: 2048 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+                 n1: 2048 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+                  n1: 2048 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+                   n1: 2048 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+                    n1: 2048 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                     n1: 2048 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                      n1: 2048 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                       n1: 2048 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                        n1: 2048 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                         n1: 2048 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                          n1: 2048 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                           n1: 2048 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                            n1: 2048 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                             n0: 2048 0x100011024: _dyld_start (in /usr/lib/dyld)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 2000 0x100003EA1: f (memory_test.c:19)
+  n0: 2000 0x100003F13: main (memory_test.c:33)
+ n1: 1536 0x1006D9CBA: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+  n1: 1536 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+   n1: 1536 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+    n1: 1536 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+     n1: 1536 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+      n1: 1536 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+       n1: 1536 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+        n1: 1536 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+         n1: 1536 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+          n1: 1536 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+           n1: 1536 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+            n1: 1536 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+             n1: 1536 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+              n0: 1536 0x100011024: _dyld_start (in /usr/lib/dyld)
+ n0: 826 in 17 places, all below massif's threshold (1.00%)
+ n1: 672 0x1006DE667: objc_msgSend_stret (in /usr/lib/libobjc.A.dylib)
+  n1: 672 0x100236FEC: _os_object_alloc_realized (in /usr/lib/system/libdispatch.dylib)
+   n0: 672 in 5 places, all below massif's threshold (1.00%)
+ n1: 486 0x100676C06: _xpc_malloc (in /usr/lib/system/libxpc.dylib)
+  n1: 486 0x100676AE1: _xpc_dictionary_insert (in /usr/lib/system/libxpc.dylib)
+   n0: 486 in 2 places, all below massif's threshold (1.00%)
+ n1: 440 0x1006DA049: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+  n1: 440 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+   n1: 440 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+    n1: 440 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+     n1: 440 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+      n1: 440 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+       n1: 440 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+        n1: 440 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+         n1: 440 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+          n1: 440 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+           n1: 440 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 440 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+             n1: 440 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 440 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 440 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                n1: 440 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                 n1: 440 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                  n1: 440 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                   n0: 440 0x100011024: _dyld_start (in /usr/lib/dyld)
+#-----------
+snapshot=60
+#-----------
+time=45464
+mem_heap_B=32784
+mem_heap_extra_B=1592
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=46480
+mem_heap_B=31784
+mem_heap_extra_B=1576
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=47496
+mem_heap_B=30784
+mem_heap_extra_B=1560
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=48512
+mem_heap_B=29784
+mem_heap_extra_B=1544
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=49528
+mem_heap_B=28784
+mem_heap_extra_B=1528
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=50544
+mem_heap_B=27784
+mem_heap_extra_B=1512
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=51560
+mem_heap_B=26784
+mem_heap_extra_B=1496
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=52576
+mem_heap_B=25784
+mem_heap_extra_B=1480
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=53592
+mem_heap_B=24784
+mem_heap_extra_B=1464
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=54608
+mem_heap_B=23784
+mem_heap_extra_B=1448
+mem_stacks_B=0
+heap_tree=detailed
+n12: 23784 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 8000 0x100003E8D: g (memory_test.c:14)
+  n1: 4000 0x100003EAA: f (memory_test.c:20)
+   n0: 4000 0x100003F13: main (memory_test.c:33)
+  n0: 4000 0x100003F18: main (memory_test.c:35)
+ n3: 3648 0x1006EF5F3: objc::DenseMap<objc_class*, objc_class*, objc::DenseMapValueInfo<objc_class*>, objc::DenseMapInfo<objc_class*>, objc::detail::DenseMapPair<objc_class*, objc_class*> >::grow(unsigned int) (in /usr/lib/libobjc.A.dylib)
+  n2: 1824 0x1006EF6C6: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+   n1: 1632 0x1006DB406: objc_opt::objc_stringhash_t::getIndex(char const*) const (in /usr/lib/libobjc.A.dylib)
+    n1: 1632 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+     n1: 1632 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+      n1: 1632 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+       n1: 1632 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+        n1: 1632 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+         n1: 1632 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 1632 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+           n1: 1632 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+            n1: 1632 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 1632 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+              n1: 1632 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 1632 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 1632 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 1632 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                  n1: 1632 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                   n1: 1632 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                    n1: 1632 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                     n0: 1632 0x100011024: _dyld_start (in /usr/lib/dyld)
+   n0: 192 in 1 place, below massif's threshold (1.00%)
+  n1: 1632 0x1006DB406: objc_opt::objc_stringhash_t::getIndex(char const*) const (in /usr/lib/libobjc.A.dylib)
+   n1: 1632 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+    n1: 1632 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+     n1: 1632 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+      n1: 1632 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+       n1: 1632 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+        n1: 1632 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+         n1: 1632 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 1632 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+           n1: 1632 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 1632 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 1632 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 1632 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 1632 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 1632 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                 n1: 1632 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                  n1: 1632 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                   n1: 1632 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                    n0: 1632 0x100011024: _dyld_start (in /usr/lib/dyld)
+  n0: 192 in 1 place, below massif's threshold (1.00%)
+ n2: 2064 0x1006DC0B5: getProtocol(char const*) (in /usr/lib/libobjc.A.dylib)
+  n1: 2064 0x1006DA96E: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+   n1: 2064 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+    n1: 2064 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+     n1: 2064 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+      n1: 2064 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+       n1: 2064 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+        n1: 2064 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+         n1: 2064 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 2064 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+           n1: 2064 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 2064 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 2064 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 2064 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 2064 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 2064 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                 n1: 2064 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                  n1: 2064 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                   n1: 2064 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                    n0: 2064 0x100011024: _dyld_start (in /usr/lib/dyld)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 2064 0x1006DD01E: NXMapRemove (in /usr/lib/libobjc.A.dylib)
+  n1: 2064 0x1006DCEA5: search_method_list(method_list_t const*, objc_selector*) (in /usr/lib/libobjc.A.dylib)
+   n1: 2064 0x1006DB0DD: _getObjc2MessageRefs(header_info const*, unsigned long*) (in /usr/lib/libobjc.A.dylib)
+    n1: 2064 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+     n1: 2064 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+      n1: 2064 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+       n1: 2064 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+        n1: 2064 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+         n1: 2064 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 2064 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+           n1: 2064 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+            n1: 2064 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 2064 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+              n1: 2064 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 2064 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 2064 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 2064 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                  n1: 2064 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                   n1: 2064 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                    n1: 2064 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                     n0: 2064 0x100011024: _dyld_start (in /usr/lib/dyld)
+ n1: 2048 0x1006F5E95: class_setWeakIvarLayout (in /usr/lib/libobjc.A.dylib)
+  n1: 2048 0x1006F5E26: class_setWeakIvarLayout (in /usr/lib/libobjc.A.dylib)
+   n2: 2048 0x1006F9BF9: _objc_atfork_parent (in /usr/lib/libobjc.A.dylib)
+    n1: 2048 0x1006E7742: property_copyAttributeList (in /usr/lib/libobjc.A.dylib)
+     n1: 2048 0x1006DD1E7: NXMapRemove (in /usr/lib/libobjc.A.dylib)
+      n1: 2048 0x1006EFBD2: attachCategories(objc_class*, locstamped_category_t const*, unsigned int, int) (in /usr/lib/libobjc.A.dylib)
+       n1: 2048 0x1006EF6C6: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+        n1: 2048 0x1006EF69F: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+         n1: 2048 0x1006EF69F: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+          n1: 2048 0x1006EF69F: objc_class::mangledName() (in /usr/lib/libobjc.A.dylib)
+           n1: 2048 0x1006DB406: objc_opt::objc_stringhash_t::getIndex(char const*) const (in /usr/lib/libobjc.A.dylib)
+            n1: 2048 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+             n1: 2048 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+              n1: 2048 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+               n1: 2048 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+                n1: 2048 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+                 n1: 2048 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+                  n1: 2048 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+                   n1: 2048 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+                    n1: 2048 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                     n1: 2048 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                      n1: 2048 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                       n1: 2048 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                        n1: 2048 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                         n1: 2048 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                          n1: 2048 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                           n1: 2048 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                            n1: 2048 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                             n0: 2048 0x100011024: _dyld_start (in /usr/lib/dyld)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 2000 0x100003EA1: f (memory_test.c:19)
+  n0: 2000 0x100003F13: main (memory_test.c:33)
+ n1: 1536 0x1006D9CBA: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+  n1: 1536 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+   n1: 1536 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+    n1: 1536 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+     n1: 1536 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+      n1: 1536 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+       n1: 1536 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+        n1: 1536 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+         n1: 1536 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+          n1: 1536 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+           n1: 1536 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+            n1: 1536 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+             n1: 1536 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+              n0: 1536 0x100011024: _dyld_start (in /usr/lib/dyld)
+ n1: 672 0x1006DE667: objc_msgSend_stret (in /usr/lib/libobjc.A.dylib)
+  n1: 672 0x100236FEC: _os_object_alloc_realized (in /usr/lib/system/libdispatch.dylib)
+   n0: 672 in 5 places, all below massif's threshold (1.00%)
+ n0: 550 in 17 places, all below massif's threshold (1.00%)
+ n1: 486 0x100676C06: _xpc_malloc (in /usr/lib/system/libxpc.dylib)
+  n1: 486 0x100676AE1: _xpc_dictionary_insert (in /usr/lib/system/libxpc.dylib)
+   n0: 486 in 2 places, all below massif's threshold (1.00%)
+ n1: 440 0x1006DA049: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+  n1: 440 0x1006EB2D0: unmap_image (in /usr/lib/libobjc.A.dylib)
+   n1: 440 0x100015667: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+    n1: 440 0x100015808: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+     n1: 440 0x1002B4AD0: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+      n1: 440 0x1006D9DAF: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+       n1: 440 0x100236F38: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+        n1: 440 0x1002430E7: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+         n1: 440 0x100126790: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+          n1: 440 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+           n1: 440 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 440 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+             n1: 440 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 440 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 440 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                n1: 440 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                 n1: 440 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                  n1: 440 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                   n0: 440 0x100011024: _dyld_start (in /usr/lib/dyld)
+ n1: 276 0x1003CBCE5: strdup (in /usr/lib/system/libsystem_c.dylib)
+  n1: 276 0x10067685D: xpc_string_create (in /usr/lib/system/libxpc.dylib)
+   n1: 276 0x10067682F: xpc_dictionary_set_string (in /usr/lib/system/libxpc.dylib)
+    n1: 276 0x100676685: _xpc_collect_environment (in /usr/lib/system/libxpc.dylib)
+     n1: 276 0x100676292: _libxpc_initializer (in /usr/lib/system/libxpc.dylib)
+      n1: 276 0x1001267A0: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+       n1: 276 0x10002B1D2: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+        n1: 276 0x10002B5DD: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+         n1: 276 0x100025FFA: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+          n1: 276 0x100025F65: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+           n1: 276 0x1000240B3: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+            n1: 276 0x100024153: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+             n1: 276 0x100012661: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+              n1: 276 0x100017BB9: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+               n1: 276 0x100011226: dyldbootstrap::start(dyld3::MachOLoaded const*, int, char const**, dyld3::MachOLoaded const*, unsigned long*) (in /usr/lib/dyld)
+                n0: 276 0x100011024: _dyld_start (in /usr/lib/dyld)
